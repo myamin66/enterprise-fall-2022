@@ -1,0 +1,35 @@
+Staging
+
+when adding changes in new file or previous and you to make it part of repository and make its snapshot.
+
+if it was part of repository previously, now you make changes in files and make its snpashot. so you have to make commit.
+
+git add 
+
+can add files in local repostiory
+
+add vs commit
+
+add mein files select kar sakte hn k konsi karni ha and konsi nhi karni
+
+add se staging area mein chali jayein ge
+
+commit se un selected files ka snapshot ban jaye ga
+
+
+Git pull
+
+when changes done in remote repository but not on local, you can have pull to get updated code
+git pull fetches changes and merge with your local code. if any conflict, you have to manually resolve
+
+when add and commit in same command use : git commit -am ""
+
+Merge Conflict
+
+when local developer (you) and remote developer make file changes on same file conflict may appear
+
+
+your changes are b/w head and equal signs and above head there are remote changes 
+
+take pull every morning when you arrive at work
+

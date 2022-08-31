@@ -1,0 +1,20 @@
+If first time, clonig the repository, you can copy ssl link, generate tokens and clone
+
+
+Staging
+if five files
+
+you want snapshot of two files
+
+you can use 'git add file-name'
+
+area where you keep files, that you make the final part of your project and make its snapshot
+then git commit 
+
+allow making changes to working directory
+
+id is made hash code made to compare and revert back
+
+staging mein wo jata ha jisko commit hona hota ha
+
+message in the commit is very important
