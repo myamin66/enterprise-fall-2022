@@ -33,3 +33,34 @@ your changes are b/w head and equal signs and above head there are remote change
 
 take pull every morning when you arrive at work
 
+Git log
+
+shows record of every changes
+
+hash code is the unique id of each commit (snapshot)
+
+Git reset
+
+the git can be reset using hashcode
+
+
+branch/feature
+
+multiple features and multiple branches
+
+git branch
+
+tells current branch and list of branches
+
+git checkout
+
+switching from one branch to another
+
+git checkout -b 'feature/google-map'
+
+
+in master branch
+
+git merge area-chart
+
+but there is confict because same line changes in every branch
