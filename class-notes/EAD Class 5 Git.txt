@@ -1,0 +1,28 @@
+Pull vs Fetch
+
+Pull: remote se updated code lekar aye ga and merge karde ga, agr confict aya to manually dekho
+
+Fetch: 
+	remote se updated lekar aye ga lekin merge nhi kare ga
+	fetch mein merge ki zarorat parti ha
+	confilct aa sakta
+
+staging area mein wo chezzein jati hn jinko commit hona hota ha
+
+Github Public Repository fork
+
+Actions: when we create pipelines for CI/CD, we define some actions in action tab
+
+you cant just contribute by cloning and editing
+it can be done by
+	-first you fork, it become your public repository
+	-clone it
+	-make changes
+	-push changes 
+	-create pull requst and send them
+	-they will reive and merge with orignal repository
+ant-design-pro: basic template.
+
+make public repositery with username.github.io
+
+it will automatically be published.
