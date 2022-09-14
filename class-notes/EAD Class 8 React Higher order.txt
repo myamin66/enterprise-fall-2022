@@ -1,0 +1,21 @@
+Higher order function
+	one function calling other function inside it.
+
+example: 
+	reduce, map, filter,
+
+benefits: 
+	readibilty
+	reusability
+	lower order function condition matched
+	declerative way
+
+Stateful logic: maintaining state with using some logic
+
+if same stateful logic in reused in multiple component/files, wo dont do that. we can use contextApI/ Higher order function/ 
+
+Aik component will be taking 2nd component(wrapped component) as argument with modification in stateful logic and will return transformed component.
+
+if a method is using this keyword. then that method is need to be bind otherwise you can you use arrow function to avoid bind
+
+
