@@ -1,0 +1,7 @@
+These 3 things do same thing
+1) Context API
+2) High Order Component
+3) Render Props
+	props.render('value')
+child passes value to the parent component
+onClick = clickFunck(), if direct call, it will be automatically called every time, hence we do it in arrow function
