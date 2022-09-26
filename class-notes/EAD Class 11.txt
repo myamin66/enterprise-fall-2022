@@ -1,3 +1,32 @@
 High Order Components
 Render Props
+
 Context API
+
+- main container in app.js
+- app.js in index.js is HtMl div
+- mostly components 
+
+Props drilling - data is passed to each child componet before to the actual component who needs it. (Hierarchical Structure)
+
+Context API: provide and consume data directly from the required component not from parent.
+
+For this purpose
+
+-	Create context
+-	Provide
+-	Consume
+-	Normaly context is in father of all components so each can use it
+
+Redux vs Use_Reducer
+vs Context API
+
+Context API to avoid prop drilling
+
+Context API doest not allow data sharing between siblings and child to parent.
+
+Redux gives global state management, no one is owner
+
+to communicate data between sibling
+
+Props are read only, it should not be changed by any components. if component change it, that becomes impure component
