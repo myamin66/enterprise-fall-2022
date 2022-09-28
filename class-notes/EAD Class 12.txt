@@ -1,0 +1,13 @@
+UseReducesr resembles with reducer
+
+Reduce= accumalator +
+
+useReducer used for state management. use state also use useReducer on the backend.
+using useReducer we can have global state managemnt when when used with context Api
+
+useReducer(reducer, initialState, payload)
+
+complex logic in state management can done with useReducer
+
+
+
