@@ -1,0 +1,6 @@
+
+Use Reducer, 
+
+actual data, loader, error, isLoading
+
+
