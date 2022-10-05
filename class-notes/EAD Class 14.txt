@@ -25,3 +25,23 @@ obj.current.focus() =>>> if log(obj.current)), inital element
 
 <input ref = "inpERef" />
 obj.current.blur()
+
+useEffect provides features of life cycle methods
+we can use it for setInterval.
+
+useEffect() takes call back functions and depedency
+const intervalref= useFef()
+
+function reset(){
+	console.log('id', intervalRef.current)
+	setCount(0)
+	clearInterval(intervalRef.current);	
+}
+useEffect(function(){
+ id = setInterval(function(){
+	setCount(count => count+1);
+	}, 1000)
+	return function(){
+		(intervalRef.current);
+	} // return is called when componet is unmounted
+}, [])
