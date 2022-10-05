@@ -1,0 +1,27 @@
+when state is changed, setState is called, value is updated and dom re-renders, providing updated value to components using that state.
+
+Angular compare all components while react compares only changed componets
+
+after setState, render is method is called. so render() should not have setState in it, otherwise it will create infinte loop.
+
+in simple useState() hook, when state is updated the componets is re-rendered. but using
+useRef() hook: 
+the dom- will not be rendered after updating the value.
+
+useRef() will return object which have property of current. (managing state without re-rendering)
+e.g. 
+const obj= useRef(0)
+
+console.log(obj.current) =>>>>>>>>> 0
+
+<button onClick()={()=>{obj.current = obj.current+1;}} (value will not be set, means components will not be re-rendered, if we print this value in log, value will be updated.)
+
+id's of intervals, previous state can be used in useRef
+
+const inpERef= useRef()
+
+
+obj.current.focus() =>>> if log(obj.current)), inital element
+
+<input ref = "inpERef" />
+obj.current.blur()
