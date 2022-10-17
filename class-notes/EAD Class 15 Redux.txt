@@ -1,0 +1,43 @@
+- state management
+- context-api
+- reducer: callback function + initial state
+
+- context-api + reducer: gives global statement touch using hooks. introducesd in around 2015
+- redux is old, most used and most popular but now a days context-api+reducer is easy
+
+ui(iphone)-> action (add product) -> ui sends action to reducer(reducer will manipulate state and that state will be in store, there can be multiple stores and all can be provided to app),
+
+action folder: directly target the index files for actions
+
+actions defined in index.js
+
+Enhance object literal, computer property, object destructuring
+
+firt made ui
+then action folder containing inedex which have like increment or dec, export them
+then reducer folder containing index file contaiting state and reducer with initial state and action manipulating that state
+create another folder named store
+us store ko humne reducer de diya
+
+store ko export karne k liye common parent (App.js jaha use ho raha ha) ko provide karein ge throug provider
+now conusme karein ge
+
+now import connect from react-redux
+
+its a function
+const mapStateToProps = (state)=>{return {count: state.count}}
+
+aik complex state ha {product, count, name} but jab counter ko yeh object do sirf count. 
+hence it will pass only useful state to the counter, that is why mapStateToProps
+
+connect is a function which is passing specfice state as a props to the Counter
+
+props k through dispact function mile ga jis mein payload pass karein ge with given thypes
+
+react is actual react, react-dom is part of react
+redux is also a separtate package which can be used.
+in vue.js, angular redux can also be used
+to use redux in react, another library react-redux can be used
+
+redux, react-redux
+
