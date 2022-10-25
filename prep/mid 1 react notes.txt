@@ -1,0 +1,3 @@
+For controlled components, you manage the input data with the help of state
+
+composition is recommend to use in react instead of inheritence
