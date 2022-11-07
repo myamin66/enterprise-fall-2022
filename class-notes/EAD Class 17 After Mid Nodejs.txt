@@ -1,0 +1,6 @@
+What is nodejs
+
+to run javascript out of the browser, it provides runtime envrionment
+nodejs = v8 + c++
+filing in javascript on server side
+
