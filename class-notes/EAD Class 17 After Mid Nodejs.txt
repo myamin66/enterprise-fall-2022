@@ -4,3 +4,32 @@ to run javascript out of the browser, it provides runtime envrionment
 nodejs = v8 + c++
 filing in javascript on server side
 
+Runtime environment: is provided through web assembly 
+(like assembly language is closed to hardware)
+
+v8 is fast due to web assembly
+
+npm open source package: 1.3mn
+
+if using react and making mobile and web
+- create custom packgae and use it for both mobile and web
+
+read about web assembly
+ - why it is good and why its closed to hardware
+
+limitations of nodejs
+
+event loop: continuously see request if it is blocking or non-blocking
+
+if a waiter for every table : multi-thread
+
+event queue: non blocking request comes in event queue
+
+print on console : non-blocking request
+
+api pool : blocking request
+
+nodejs have single theread but there can be child processes
+when high computation on processor required, dont use nodejs
+
+power consumption leaset used: top c++, javascript, 
