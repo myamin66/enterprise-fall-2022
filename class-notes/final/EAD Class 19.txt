@@ -1,0 +1,51 @@
+install mongodb community
+
+atlas is mongodb but cloud mongodb. after some limit it has paid
+mongodb community is local,
+
+show dbs
+
+use db_name
+
+for new db -> use db_name, but it will not shown, until you make collection
+show collection
+-----------
+db.createCollection('User')
+db
+show collection
+db.User.insertOne({name: 'Ali', age:36})
+db.User.insert({name: 'Talha', age:36})
+to insert bulk
+db.User.insert(array of objects)
+db.user.find.pretty()
+db.user.find({name:'Ali'}) (mulitple)
+db.User.findOne({name:'Ali'}) (top most)
+
+mongodb also gives support to time series data, 
+like iot devices, sensors, etc
+
+db.User.distinct('name')
+
+architecture of mongodb
+ - master
+ - slave
+db.User.find({city: 'Banu', age:{$gt:12}})
+db.User.find({city: 'Banu', age:{$lte:12}})
+db.User.updateOne({_id:ObjectId("djfejifjdk"), 
+{'talha muneer', province:'kpk'}})
+
+set keyword
+upsert
+insert
+
+db.User.update({_id:ObjectId("djfejifjdk"), 
+{'talha muneer', province:'kpk'}})
+
+db.User.remove({name:'Shah'}) => Deleted true result
+_id to get id
+if all many shah, it will delete everyone.
+db.User.remove({name:'Shah'}, {justOne:true})
+db.User.insertMany([{},{}])
+
+db.User.find({},{name:1, age:1, city:1,_id:0,"address.street.name":1}).prettry()
+
