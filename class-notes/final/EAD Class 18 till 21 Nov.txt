@@ -1,0 +1,374 @@
+process.pid
+
+
+url k bad jo atha he wo query string hotha he.
+url?name=KD&kdfj
+ 
+
+(name=KD&kdfj) this is query string. 
+
+how to install it:
+yarn add queryString 
+
+
+const qs = require('querystring');
+const person ={name: 'Hadi', age:23, gender: 'male'}
+const str = qs.stringify(person) ;
+
+console.log(str) ;
+console.log(qs.parse(str)) ;
+
+
+let say i have a url.
+const url = 'https://www.google.com?msg=hello+world'
+
+const subStr = url.substring(url.indexof('?')+1);
+console.log(qs.parse(subStr));
+
+
+explore these:
+path 
+fs
+
+
+req is an object that has alot of things
+
+
+//Creation of server
+
+const http = require('http');
+const server = http.createServer(function(req, res){
+	//console.log(req.url);
+	//res.end('Hello');
+	if(
+
+})
+
+server.listen(process.env.PORT, function(){
+	console.log("Server is listening on port");
+})
+
+
+
+
+................NEST JS.....................
+it has models, decorators, and structures ets 
+it will provide a structure through which you can build your structure
+
+A framework can be of two type.
+1, react js me ham convension ko follow nahi kerthain
+2, 
+
+framework convension by configuration and configuration by convention 
+
+express me ham khud structur banathen hen.
+
+better is to use NEST JS for the structure.
+
+NEST JS is for structure of NODE.
+
+I have to explore NEST JS.
+
+
+end send and json me kia faraq he.
+
+end:
+response will not end untill we end it.
+
+
+What is profiler in ReactJS.
+Rendering cost malom kerni he.
+Kuch asai components hotain hen jis ki wajah se child be rerender ho
+thain he. 
+DEV mode me 
+
+Profiler se kesai performance bahtor ki
+jasekti he.
+Is me konsa component again & again rerender hota he, konsa component
+ziada time letha he.
+Its perpuse is to reduce the rendering cost.
+
+
+madiam se perlo.
+
+
+ECHART JS 
+react k under use ker le k ana he.
+we have to explore its documentation.
+
+
+....................Working with Express............
+
+npm install express
+
+const express = require('express')
+
+const app = express();
+app.get('/about', function(req,res){
+	res.send({name:'Ali'});
+})
+
+
+
+..............................Profiler..............................
+The Profiler measures how often a React application renders and what the “cost” of rendering is.
+
+Its purpose is to help identify parts of an application that are slow and may benefit from optimizations such as memoization.
+
+Note: Profiling adds some additional overhead, so it is disabled in the production build.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+................................EchartJS.........................................................
+
+https://medium.com/@noffybarudwale/simple-way-to-use-echart-in-react-9c4267ab4a95
+
+
+React is a free and open-source front-end JavaScript library for building user interfaces or UI components..
+ECharts is an open-sourced JavaScript graphing library for creating intuitive, interactive, and highly customizable charts. here
+
+
+$ yarn add echarts echarts-for-react
+OR
+$ npm i echarts echarts-for-react
+
+
+// src/App.js
+import React from "react";
+import ReactEcharts from "echarts-for-react"; 
+function App() {  
+const option = {
+  xAxis: {
+    type: 'category',
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [120, 200, 150, 80, 70, 110, 130],
+      type: 'bar'
+    }
+  ]
+}; 
+return <ReactEcharts option={option} />;
+} 
+export default App;
+
+
+
+
+
+..........................................////////////.............................................
+
+const express = require('express');
+const app = express() ;
+
+app.get('/about', function(req, res){
+	res.sendFile(path.resolve(__dirname, 'about.html'));
+})
+
+app.listen(process.env.PORT)
+
+
+
+
+
+
+
+
+
+......................................app.use..................
+
+app.use basically use the middleware.
+
+we can make our own middlewares and also can use 3rd Party middlewares.
+
+bodyparser is a middleware.
+user authentication can be a middleware.
+
+we will check if the user loggedin is checked then we will let him to 
+persom CRUD.
+
+
+
+ORM: Object Relational Model.
+we can use already created functions.
+and queries.
+
+We always write parameterize query not direct query to prevent from the
+sql injection.
+
+like
+
+{text: 'WHERE name = $1 AND age > $2', values:['KD',50]}
+
+
+
+to access the static resources,
+First static resources will be public then  we can access.
+
+app.use(express.static('public'));
+
+
+make a dir:
+public/assets/style
+
+app.use(express.static('public'));
+
+
+index.js will be on server side but 
+style can be used on the client side but we will have to public it first
+
+by app.use(express.static('public'));
+
+
+we keep all the static or file that we want to public will keep in 
+public folder.
+
+
+In server side rendering code is generated dynamically.
+
+
+
+
+
+
+How to do proper SEO;
+Then keep the main pages on the server side and 
+So use hybride approach. 
+and use some pages on the server side and some on the client side 
+rendering.
+
+
+NEXT JS has both server and client side rendering.
+to resolve this issue of SEO.
+
+
+EJS is a library also named it Templete engine
+
+PUG is also a templete engine that generates 
+
+
+yarn add nodemon
+
+
+
+DOCKER services.
+
+yarn remove nodemon
+to remove the nodemon
+
+
+yarn add -dev nodemon
+
+
+
+yarn add ejs
+
+make a dir in server folder
+named = view
+and make html file with ejs extension
+
+single statement k liye <%= name %>
+
+
+<ul>
+	<li><a href='home'>Home</a></li>
+</ul>
+
+<ul>
+	<%
+		for(let i=0 ; i<products.length; i++){
+			<li>
+				<%=
+					products[i]	
+				%>
+			<li/>
+		}
+	%>
+</ul>
+
+
+
+we will make a layout in 
+
+
+
+We will be generating tampletes based on database.
+we can use MySql is better for data under 2GB
+
+WORK ON postGrase, it is used for relational databases.
+White Column for the Chating System.
+
+We will be doing Mongo DB
+
+Sir will be doing Model, controller and services.
+then we will go for the nextjs.
+
+
+
+.........................................MongoDB
+mongodb is schema less but it has redundency.
+no predefined schema here in MongoDB.
+is no sql and document based database. 
+term collection is used instead of table. document is the actual document e.g irfan's document.
+BSON is to be read.
+
+
+schemaless data goes in mongodb.
+
+application where we achieve transaction we use relational db.
+
+application where app performance maters we go for the structured database 
+
+
+
+chat k liye widecolumn database.
+
+we can use poliglode approach for data. like facebook.
+
+
+databases are well structured but mostly have 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
