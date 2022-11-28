@@ -1,0 +1,39 @@
+Player.js file
+
+const {Model, Schema} = require('moongose');
+const PlayerSchema = new Schema({
+name: String,
+country: String,
+typeOf:String,
+role: String,
+score: Number,
+ranking: Number,
+});
+
+const Player = Model('Player', PlayerSchema);
+
+module.exports = Player;
+
+
+-----------------
+make database
+-----------
+
+use mera-db
+show collections
+db.createCollection('Player')
+db.Player.insert({name: 'CR7', country: 'Pakistan', typeOf:'Bowler', role: 'Captain', score: 120, ranking: 1});
+db.Player.insert({name: 'Messi', country: 'Pakistan', typeOf:'Upmire', role: 'Captain', score: 120, ranking: 1});
+
+
+
+now in index.js
+c
+const Player = require('./models/Player')
+
+app.get('/players', function(req, res){
+	const players = Player.find({});
+	res.render()
+})
+
+const player = await Player.findById(req.params.id)
