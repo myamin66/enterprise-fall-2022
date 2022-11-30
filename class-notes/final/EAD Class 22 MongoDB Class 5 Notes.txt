@@ -25,3 +25,14 @@ model view controller
 business logic in 
 promise is blocking request
 promise all settled
+
+---------------
+notes provided by Shah Muhammad
+
+1- https://www.bezkoder.com/react-node-express-mongodb-mern-stack/
+2- https://aviyel.com/post/1278/crafting-a-stunning-crud-application-with-mern-stack
+3- https://www.positronx.io/react-mern-stack-crud-app-tutorial/
+4- MVC in ReactJs + NodeJs
+
+Rate limiter NodeJs package
+Bcrypt
