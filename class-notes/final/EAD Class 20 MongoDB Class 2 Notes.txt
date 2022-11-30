@@ -1,0 +1,34 @@
+mongodb class 2
+
+show dbs
+use mera-db
+show collections
+db.User.find()// show all
+gt, eq, 
+db.User.find({age: {$ne:12}})
+db.User.find({address:{$ne: 'CHK'}})
+db.User.find({"address.city":{$ne: 'CHK'}})
+db.User.find({age: {$in:[12-36]}})
+db.User.find({$and:[{age:{$gte:12}}, {age:{$lt:36}}]})
+db.User.find({semester:{$exists:true}})
+
+mongodb course on mongodb academy website
+assignment activity: profiler, e-charts
+learn typscirpt on yourself
+
+Ts code transpiles into javascript, ts also have interfaces but js dont
+ORM(object relational mapping) & ODM (object data model)
+ORM sequalize
+yarn add mongoose 
+const mongoose = require('mongoose')
+mongoose.connect('mongodb://127.0.0.1:27017/mera-db', {useNew})
+const Schema = mongoose.Schema
+const UserSchema = new Schema({name: string, password: string, age:number})
+
+const User = mongoose.Model('User', UserSchema)
+migrations against models
+mongoose is odm
+mongodb is orm
+
+
+

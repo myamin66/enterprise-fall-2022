@@ -1,0 +1,27 @@
+mongodb next class
+not much SEO support in react
+service side rendering limited
+when sending data through POST method, parsing of data is mandatory
+
+cd server
+yarn add body-parser
+const body-parser = require('body-parser')
+
+body parser express
+
+extended = true: all type of data //version 4.2
+app.use(bodyparser.json())
+app.use(express.json())
+app.use(express.urlencoded())
+
+double !!
+!!res : if true it will execute statement otherwise not
+middleware between request and respone
+one or more middleware can be applied 
+
+MVC
+model view controller
+
+business logic in 
+promise is blocking request
+promise all settled
