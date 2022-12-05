@@ -1,0 +1,24 @@
+MongoDB course #code
+
+Password shoulb de stored as hash, using bcrypt func
+
+Javascript mein value pass nhi hoti, refrence pass hota ha
+
+signup.ejs
+route define karna ha index.js mein ja kar
+
+cookies 
+persistent vs non persistent store
+why cookies: to store user activites
+
+Express Session:
+middleware session key ki help se acessable hn ge
+
+Rate Limiter
+Server side 
+short polling, long polling(client waits unitl response comes, it uses TTL), ajex, event source api, client Request
+socket.io
+
+Cookies and Session 
+SSE: Server Sent events
+Event Source API
