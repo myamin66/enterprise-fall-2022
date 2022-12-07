@@ -1,0 +1,7 @@
+if login, then redirect it to some page otherwise stay on login
+
+how to import middleware
+
+const authRedirect = require('./middleware/authRedirect')
+
+node index.js (like javac compile, here javascript first transpiles)
