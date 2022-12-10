@@ -1,0 +1,13 @@
+migration models
+
+create own apis using backend, consume with ant-d
+
+yarn aded mongoose-unique-validator
+
+odm used with non-relational, no sql DBs
+
+flush method, to refresh the
+
+code attendant vscode extention
+
+mintlify: genereate docs
