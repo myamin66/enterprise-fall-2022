@@ -6,8 +6,10 @@ yarn aded mongoose-unique-validator
 
 odm used with non-relational, no sql DBs
 
-flush method, to refresh the
+flash method destroys the data such as error, when page refreshed all errors gone
 
 code attendant vscode extention
 
 mintlify: genereate docs
+
+form data shuld persist, use session
