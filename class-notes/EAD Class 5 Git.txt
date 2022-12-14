@@ -26,4 +26,5 @@ ant-design-pro: basic template.
 make public repositery with username.github.io it will automatically be published.
 
 Git log
-The git log command shows a list of all the commits made to a repository. You can see the hash of each Git commit , the message associated with each commit, and more metadata. 
+The git log command shows a list of all the commits made to a repository. 
+You can see the hash of each Git commit , the message associated with each commit, and more metadata. 

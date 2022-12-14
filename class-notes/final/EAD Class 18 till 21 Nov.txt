@@ -48,9 +48,6 @@ server.listen(process.env.PORT, function(){
 	console.log("Server is listening on port");
 })
 
-
-
-
 ................NEST JS.....................
 it has models, decorators, and structures ets 
 it will provide a structure through which you can build your structure
@@ -116,24 +113,6 @@ The Profiler measures how often a React application renders and what the “cost
 Its purpose is to help identify parts of an application that are slow and may benefit from optimizations such as memoization.
 
 Note: Profiling adds some additional overhead, so it is disabled in the production build.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ................................EchartJS.........................................................
 
@@ -346,29 +325,4 @@ chat k liye widecolumn database.
 we can use poliglode approach for data. like facebook.
 
 
-databases are well structured but mostly have 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+databases are well structured but mostly have

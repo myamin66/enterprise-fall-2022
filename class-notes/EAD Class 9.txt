@@ -1,8 +1,8 @@
 Working with Forms
 
-Formic library 
+Formik library 
 
-useFormic hook, make sure to use same names of name in formik hook
+useFormik hook, make sure to use same names of name in formik hook
 
 
 useState accepts an initial state and returns two values: The current state. A function that updates the state.
